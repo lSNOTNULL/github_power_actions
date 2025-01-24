@@ -1,12 +1,11 @@
 name: schedule
 
 on:
-  workflow_dispatch: # 수동으로 돌려본다
-  #push , .... 여러가지 설정이 있는데..
+  workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
       # https://crontab.guru/
-      # 30분 정도의 텀을 둬야함
+      # 30분의 텀 필요
 
 jobs:
   make-issue:
@@ -27,4 +26,3 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node index.js
-        
