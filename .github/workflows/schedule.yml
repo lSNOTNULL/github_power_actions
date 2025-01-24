@@ -5,7 +5,6 @@ on:
   schedule:
     - cron: '0 * * * *'
       # https://crontab.guru/
-      # 30분의 텀 필요
 
 jobs:
   make-issue:
