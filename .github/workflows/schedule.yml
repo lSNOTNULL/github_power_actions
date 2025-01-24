@@ -1,10 +1,12 @@
 name: schedule
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 수동으로 돌려본다
+  #push , .... 여러가지 설정이 있는데..
   schedule:
     - cron: '0 * * * *'
       # https://crontab.guru/
+      # 30분 정도의 텀을 둬야함
 
 jobs:
   make-issue:
