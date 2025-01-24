@@ -1,7 +1,7 @@
 async function makeIssue() {
     const token = process.env.GH_TOKEN; // 주의! 일치해야함 (env와 일치해야함)
     // 요고 1
-    const OWNER = "ISNOTNULL"; // 여러분들의 github 계정 이름
+    const OWNER = "lSNOTNULL"; // 여러분들의 github 계정 이름
     // 요고 2
     const REPO = "github_power_actions"; // 여러분들의 현재 리포지터리 이름
     const response = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/issues`, {
